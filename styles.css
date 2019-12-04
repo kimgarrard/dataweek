@@ -15,9 +15,31 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: SofiaRegular;
 }
 
 .invisible {
     display: none;
+}
+
+.legenda {
+  border: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+  width:10%;
+}
+
+.imagesDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.imagesDiv img {
+  position: absolute;
+  opacity: 0.5;
 }
