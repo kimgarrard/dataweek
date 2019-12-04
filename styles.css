@@ -20,26 +20,176 @@
 }
 
 body {
-    font-family: SofiaRegular;
+    font-family: proxima-nova;
+    background-color: #323233;
+    color: white;
+    margin-left: 5vw;
+    margin-top: 4vw;
+}
+
+.bovenkant {
+  display: flex;
+}
+
+.extraInfo {
+  display: flex;
+}
+
+.extraInfo img {
+  height: 48%;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+.extraInfo div {
+  margin-left: 5em;
+}
+
+.tekst {
+  width: 45%;
+}
+
+.tekst h1 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+
+.natuur {
+  color: rgba(130,255,150, 0.7)
+}
+
+.tekst div {
+  width: 85%;
 }
 
 .invisible {
     display: none;
 }
 
+.ondertitel {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .legenda {
-  border: 1px solid grey;
-  display: flex;
-  flex-wrap: wrap;
-  width:10%;
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 0.5em;
+  padding: 1.5em 2.5em;
+  margin-top: 2%;
+}
+
+.legenda h2 {
+  margin-bottom: 0.5em;
+}
+
+.legenda input {
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  -o-appearance:none;
+
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 0.1em;
+
+}
+
+.legenda input:checked {
+  background-image: url(images/check.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+.optie1 {
+ border: 1px solid #75CDFF;
+}
+
+.optie1:checked {
+ background-color: #75CDFF;
+}
+
+.optie2 {
+ border: 1px solid #6BE8CC;
+}
+
+.optie2:checked {
+ background-color: #6BE8CC;
+}
+
+.optie3 {
+ border: 1px solid #82FF96;
+}
+
+.optie3:checked {
+ background-color: #82FF96;
+}
+
+.optie4 {
+ border: 1px solid #B0E86B;
+}
+
+.optie4:checked {
+ background-color: #B0E86B;
+}
+
+.optie5 {
+ border: 1px solid #FFF26E;
+}
+
+.optie5:checked {
+ background-color: #FFF26E;
 }
 
 .imagesDiv {
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 
 .imagesDiv img {
   position: absolute;
   opacity: 0.5;
+  width: 55%;
+}
+
+.imagesDiv img:nth-of-type(1) {
+  opacity: 1 !important;
+}
+
+
+
+body > div:nth-of-type(1) {
+  background-color: #82FF96;
+  width: 15em;
+  height: 15em;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  right: -2vw;
+  top: -15vh;
+}
+
+body > div:nth-of-type(2) {
+  background-color: #82FF96;
+  width: 22em;
+  height: 22em;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  left: -10vw;
+  top: 80vh;
+}
+
+body > div:nth-of-type(3) {
+  background-color: #82FF96;
+  width: 18em;
+  height: 18em;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  right: -2vw;
+  bottom: -50vh;
 }
