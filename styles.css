@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "FuturaCM";
+    src: url("fonts/Futura.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SofiaRegular";
+    src: url("fonts/SofiaProRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SketchOpen";
+    src: url("fonts/KGSecondChancesSketch.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: SofiaRegular;
+}
+
+.invisible {
+    display: none;
+}
